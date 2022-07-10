@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+t=-1:.0002:5;
+f=2;
+x=sawtooth(2*pi*2*t,1/2);
+plot(t,x);
+title('triangular function');
+xlabel('n');
+ylabel('x(n)');
