@@ -1,34 +1,6 @@
 clc;
 clear all;
 close all;
-p12=1/4; %cross over probability<0.5
-disp('probalitiy transiton matrix =')
-pybyx =[ 1-p12 p12; p12 1-p12]; %probalitiy transiton matrix
-disp(pybyx) 
-
-%{
-For different values of ? ranging
-from 0 to 1, finding the joint probability matrix, P(X,Y) and output
-probability, P(Y)
-%}
-
-
-
-
-for p=0:0.5:1;
-pbar=1-p;
-pxy1=[pbar/2 p/2; p/2 pbar/2];
-py=pbar/2 + p/2;
-disp('when probability =')
-disp(p)
-disp('P(X,Y) =')
-disp(pxy1);
-disp('p(y)=')
-disp(py);
-end
-
-%Plot and Evaluate the MUTUAL INFORMATION as a function of probability of transition error.
-
 %Probability of symbol 0
 p0=0.4;
 %Probability of symbol 1
@@ -76,5 +48,3 @@ xlabel('Transition Error Probability');
 ylabel('Mutual Information');
 title('Mutual Information against Transition Error Probability');
 grid;
-
-

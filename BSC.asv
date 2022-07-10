@@ -1,0 +1,33 @@
+clc;
+clear all;
+close all;
+p1=1/4; %cross over probability<0.5
+pybyx =[ 1-p1 p1; p1 1-p1]; %probalitiy transiton matrix
+disp(pybyx) 
+
+%{
+For different values of ? ranging
+from 0 to 1, finding the joint probability matrix, P(X,Y) and output
+probability, P(Y)
+%}
+
+
+
+
+for p=0:0.5:1;
+pbar=1-p;
+pxy1=[pbar/2 p/2; p/2 pbar/2];
+py=pbar/2 + p/2;
+disp('when probability =')
+disp(p)
+disp(pxy1);
+disp(py);
+c1=1+p*log2(p)+pbar*log2(pbar));
+disp('capacity =')
+disp(c1);
+t=-1:0.001:2;
+plot(c1,t)
+end
+
+
+
