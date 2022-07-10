@@ -1,3 +1,18 @@
+
+%{
+Binary Symmetric Channel
+1. Create a 2 x 2 matrix, P(Y/X) for binary symmetric channel with
+channel transition probability, p < 0.5.
+2. Let the input symbol probabilities corresponding to symbol 0 and
+1 be ? and (1 - ?) respectively. For different values of ? ranging
+from 0 to 1, find the joint probability matrix, P(X,Y) and output
+probability, P(Y)
+3. Find mutual information, I(X; Y) = H(Y) – H(Y/X) for each
+value of ?. Plot the I(X; Y) versus ? graph and observe the channel
+capacity.
+%}
+
+
 clc;
 clear all;
 close all;

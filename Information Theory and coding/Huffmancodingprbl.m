@@ -1,3 +1,19 @@
+%{
+Source Coding - Huffman Code
+1. Generate Huffman code for the source with symbol probabilities
+{1/2, 1/3, 1/6}.
+2. Find the entropy, average codeword length and efficiency of the
+code.
+3. Create the second order extended source by taking probabilities
+of 9 symbols in the extended source as the product of every
+possible combinations of two symbols from the original source.
+4. Generate Huffman code for the extended source symbols and
+find the entropy, average codeword length and efficiency of the
+code.
+5. Compare the two efficiencies and appreciate the Shannon’s
+source coding theorem. .
+%}
+
 clc;
 clear all;
 close all;
